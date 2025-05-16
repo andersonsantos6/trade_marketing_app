@@ -62,13 +62,13 @@ class AtuhDatasourceImpl implements AuthDatasource {
     } else {
       const Map<String, dynamic> body = Mocks.loginResult;
 
-      /*    bool success = body['success'] == true;
+      bool success = body['success'] == true;
 
       if (!success) {
         String? msg = body['message'];
         throw AuthException(msg ?? 'Erro ao fazer login');
       }
- */
+
       final userBody = body['user'];
       final user = UserModel.fromMap(userBody);
 
